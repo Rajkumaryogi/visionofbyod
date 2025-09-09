@@ -1,0 +1,8 @@
+{
+  "name": "mongodb-utils-layer",
+  "version": "1.0.0",
+  "dependencies": {
+    "mongodb": "^6.3.0",
+    "aws-sdk": "^2.1565.0"
+  }
+}
