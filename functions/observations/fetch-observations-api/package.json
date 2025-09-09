@@ -1,0 +1,9 @@
+{
+  "name": "fetch-observations-api",
+  "version": "1.0.0",
+  "description": "Lambda function to fetch observations for a user.",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^6.7.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "ingest-api",
+  "version": "1.0.0",
+  "description": "Lambda function to ingest a single observation into MongoDB.",
+  "main": "index.js",
+  "dependencies": {
+    "mongodb": "^6.7.0"
+  }
+}
