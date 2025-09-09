@@ -1,0 +1,20 @@
+{
+  "name": "vision-byod",
+  "version": "1.0.0",
+  "scripts": {
+    "build:layer": "cd layers/mongodb-utils && npm install --production && cd .. && zip -r mongodb-utils.zip mongodb-utils/",
+    "build:functions": "npm run build:layer && for dir in functions/*/*/; do (cd \"$dir\" && npm install --production && cd .. && zip -r \"$(basename $dir).zip\" \"$(basename $dir)/\"); done",
+    "terraform:init": "cd terraform && terraform init",
+    "terraform:plan": "cd terraform && terraform plan",
+    "terraform:apply": "cd terraform && terraform apply -auto-approve",
+    "terraform:destroy": "cd terraform && terraform destroy",
+    "deploy": "npm run build:functions && npm run terraform:apply"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.1565.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.2",
+    "mongodb": "^6.19.0"
+  }
+}
