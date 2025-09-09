@@ -73,3 +73,8 @@ Reason: To efficiently query for all data of a specific type across all patients
 ### ## Step 2 Complete ✅
 
 You have now successfully created the documentation that defines your data structures. These files will serve as a reference as you begin to write the code. You are ready for the next step: provisioning your cloud infrastructure with Terraform.
+
+MONGODB_SECRET_ARN=arn:aws:secretsmanager:us-east-1:713860847276:secret:app/mongodb/password-UF36ry
+FITBIT_CLIENT_ID=your_fitbit_client_id
+FITBIT_CLIENT_SECRET=your_fitbit_client_secret
+NODE_ENV=production
