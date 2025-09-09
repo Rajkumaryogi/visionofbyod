@@ -1,0 +1,36 @@
+node_modules
+.env
+.terraform/
+.terraform/
+
+terraform/.terraform/providers/registry.terraform.io/mongodb/mongodbatlas/1.40.0/darwin_arm64/terraform-provider-mongodbatlas_v1.40.0
+terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/5.100.0/darwin_arm64/terraform-provider-aws_v5.100.0_x5
+*.tfstate
+*.tfstate.*
+.crash
+.terraform.lock.hcl
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform lock file
+.terraform.lock.hcl
+
+# Crash logs
+crash.log
+*.tfstate
+*.tfstate.*
+*.backup
+
+
+# Terraform local state
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+*.backup
+
+# Terraform working dirs
+.terraform/
+.terraform.lock.hcl
+.terraform/
